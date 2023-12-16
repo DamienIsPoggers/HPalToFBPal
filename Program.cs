@@ -47,6 +47,7 @@ namespace HPalToFBPal
                         break;
                     case "-palSize":
                         paletteSize = int.Parse(args[i + 1]);
+                        i++;
                         if (paletteSize > 256 || paletteSize < 1)
                         {
                             Console.WriteLine("Invalid palette size, reverting to default size.");
